@@ -1,3 +1,16 @@
+# This file is a template for ignoring files in a Git repository.
+# It is recommended to use this file as a starting point and customize it according to your project's needs.
+# For more information, see https://git-scm.com/docs/gitignore
+# Lines starting with '#' are comments and will be ignored by Git.
+# Lines starting with '!' are negated patterns and will not be ignored.
+# Lines starting with '/' are treated as relative to the root of the repository.
+# Lines starting with '*' are treated as wildcards and will match any characters.
+# Lines starting with '**' are treated as wildcards and will match any characters, including directory separators.
+################################
+## General
+################################
+# cdimascio dotenv-java environment variables
+.env
 ##############################
 ## Java
 ##############################
