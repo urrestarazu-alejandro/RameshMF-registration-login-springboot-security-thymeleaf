@@ -1,0 +1,16 @@
+services:
+  datasource:
+    image: mysql:8.0
+    container_name: login-db-mysql-container
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: login-db
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: qw1234er
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "127.0.0.1" ]
+      timeout: 20s
+      retries: 1
